@@ -1,12 +1,10 @@
+import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-
-interface RouterParams {
-  id: string
-}
 
 export const Detail = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
+  useEffect(() => { document.title = "Detail:" + id }, [])
 
   return (
     <>
