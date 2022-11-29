@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { Link } from "react-router-dom";
-
+import { useDocTitle } from "../customHooks"
 
 export const NotFound = () => {
-  useEffect(() => { document.title = "Not Found" }, [])
+  useDocTitle("Not Found");
   return <><div>Not Found</div><Link to="/">home</Link></>;
 };
