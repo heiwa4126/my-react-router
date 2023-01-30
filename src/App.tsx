@@ -1,8 +1,8 @@
-import './App.css'
-import { Routes, Route } from 'react-router-dom';
-import { Home } from './Pages/Home';
-import { Detail } from './Pages/Detail';
-import { NotFound } from './Pages/NotFound';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import { Detail } from "./Pages/Detail";
+import { NotFound } from "./Pages/NotFound";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
