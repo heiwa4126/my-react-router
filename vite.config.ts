@@ -10,7 +10,7 @@ export default defineConfig(({ command }: ConfigEnv) => {
 			rollupOptions: {
 				output: {
 					manualChunks: {
-						v: ["react", "react-dom", "react-router-dom"],
+						v: ["react", "react-dom", "react-router"],
 					},
 				},
 			},
